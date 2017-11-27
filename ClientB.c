@@ -88,7 +88,7 @@ int main(int argc, char* argv [])
 	ack = (espelho*) malloc (44625 * sizeof(espelho));
 
 	struct timeval timeout;      
-    	timeout.tv_sec = 1;
+    	timeout.tv_sec = 10;
     	timeout.tv_usec = 0;
 
 	FILE *fp;
