@@ -131,11 +131,6 @@ int main(int argc, char* argv [])
 	}while(rbytes == PACOTE);
 
 	fclose(fh);
-	clientAddr.sin_family = AF_INET;
-    	clientAddr.sin_port = htons(PORT);
-	clientAddr.sin_addr.s_addr = htonl(INADDR_ANY);
-	memset(&clientAddr.sin_zero, '\0', sizeof(clientAddr.sin_zero));	
-
 	serverAddr.sin_family = AF_INET;
 	serverAddr.sin_port = htons(PORT);
 	serverAddr.sin_addr.s_addr = inet_addr(SERVER_IP);
