@@ -1,12 +1,12 @@
-all: Rendezvous ClienteA ClientB
+all: Rendezvous ClienteA ClienteB
 
-rendezvouz: Rendezvous.c
+Rendezvouz: Rendezvous.c
         gcc -o Rendezvous Rendezvous.c 
 
-clienta: ClienteA.c
+ClienteA: ClienteA.c
         gcc -o ClienteA ClientA.c -lcrypto
 
-clientb: ClienteB.c
+ClienteB: ClienteB.c
         gcc  -o ClienteB ClientB.c -lcrypto
 
 clean:
