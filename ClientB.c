@@ -193,7 +193,7 @@ int main(int argc, char* argv [])
 			}
 		}
 		else 
-				if(strcmp(buffer.data, "Enviado") == 0)
+		{		if(strcmp(buffer.data, "Enviado") == 0)
 				{
 					Filesize = buffer.aux;
 					Sizecheck2 = Filesize;		
